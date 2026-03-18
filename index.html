@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikha & Gaurav – Our Love Story 💕</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"><span>💖</span></div>
+
+    <!-- Click Hearts -->
+    <div class="click-hearts" id="click-hearts"></div>
+
+    <!-- Background -->
+    <div class="background-container">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="gradient-orb orb-5"></div>
+        <div class="glow-spot"></div>
+        <div class="glow-spot"></div>
+        <div class="glow-spot"></div>
+        <div class="stars" id="stars"></div>
+        <div class="floating-hearts-bg" id="floating-hearts-bg"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-heart"><span>💗</span></div>
+            <h2 class="loading-title">Loading our love story...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Messages -->
+    <div class="floating-messages" id="floating-messages"></div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-btn" id="music-btn">
+            <span class="music-icon">🎵</span>
+            <span class="music-heart-icon">💕</span>
+        </button>
+        <div class="music-info">
+            <span class="music-text" id="music-text">Click to play 🎶</span>
+        </div>
+        <div class="volume-container">
+            <span>🔊</span>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="bg-music" loop>
+            <source src="Humnava Mere Music Ringtone Download - MobCup.Com.Co.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Fuljhari Sound -->
+    <audio id="fuljhari-sound">
+        <source src="New Recording 3.m4a.mp4" type="audio/mpeg">
+    </audio>
+    
+    <!-- Nickname Sounds -->
+    <audio id="sound-fuljhari">
+        <source src="New Recording 3.m4a.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="sound-radha">
+        <source src="radha.m4a.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="sound-mirchi">
+        <source src="mirchi.m4a.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="sound-cutenesski">
+        <source src="cutenesski.m4a.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="sound-chuhiya">
+        <source src="chuhiya.m4a.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="sound-fulan">
+        <source src="FULAN.m4a.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="sound-overloaded">
+        <source src="overloaded.m4a.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="sound-moogfali">
+        <source src="moogfali.m4a.mp4" type="audio/mpeg">
+    </audio>
+
+    <!-- Main Content -->
+    <main class="journey" id="journey">
+        
+        <!-- Section 1: Hero -->
+        <section class="section hero-section active" id="section-1">
+            <div class="hero-content">
+                <div class="hero-hearts">
+                    <span>💕</span><span>💗</span><span>💖</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="typed" id="typed-name"></span><span class="cursor">|</span>
+                </h1>
+                <p class="hero-subtitle" id="typed-subtitle"></p>
+                <button class="hero-btn" id="hero-btn">
+                    <span>Start Our Journey</span>
+                    <span class="btn-heart">💕</span>
+                </button>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- Section 2: Quiz -->
+        <section class="section quiz-section" id="section-2">
+            <div class="section-content">
+                <h2 class="section-title"><span class="title-glow">Let's Play Baby 💕</span></h2>
+                <div class="quiz-container" id="quiz-container">
+                    <div class="question-card" id="question-1" data-question="1">
+                        <div class="question-header">
+                            <span class="question-number">Question 1 of 5</span>
+                            <span class="question-emoji">👀</span>
+                        </div>
+                        <h3 class="question-text">When did I first see you?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-correct="false">2016</button>
+                            <button class="option-btn" data-correct="true">2017</button>
+                            <button class="option-btn" data-correct="false">2018</button>
+                            <button class="option-btn" data-correct="false">2019</button>
+                        </div>
+                    </div>
+                    <div class="question-card" id="question-2" data-question="2">
+                        <div class="question-header">
+                            <span class="question-number">Question 2 of 5</span>
+                            <span class="question-emoji">🏫</span>
+                        </div>
+                        <h3 class="question-text">Where did I first see you?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-correct="true">Shivam Convent School Patna</button>
+                            <button class="option-btn" data-correct="false">Park</button>
+                            <button class="option-btn" data-correct="false">Market</button>
+                            <button class="option-btn" data-correct="false">Tuition</button>
+                        </div>
+                    </div>
+                    <div class="question-card" id="question-3" data-question="3">
+                        <div class="question-header">
+                            <span class="question-number">Question 3 of 5</span>
+                            <span class="question-emoji">💍</span>
+                        </div>
+                        <h3 class="question-text">When did I propose to you?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-correct="true">25 May 2019</button>
+                            <button class="option-btn" data-correct="false">14 February 2020</button>
+                            <button class="option-btn" data-correct="false">1 January 2019</button>
+                            <button class="option-btn" data-correct="false">10 June 2018</button>
+                        </div>
+                    </div>
+                    <div class="question-card" id="question-4" data-question="4">
+                        <div class="question-header">
+                            <span class="question-number">Question 4 of 5</span>
+                            <span class="question-emoji">🎨</span>
+                        </div>
+                        <h3 class="question-text">What is your favorite color?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-correct="false">Blue</button>
+                            <button class="option-btn" data-correct="true">Red</button>
+                            <button class="option-btn" data-correct="false">Black</button>
+                            <button class="option-btn" data-correct="false">Yellow</button>
+                        </div>
+                    </div>
+                    <div class="question-card" id="question-5" data-question="5">
+                        <div class="question-header">
+                            <span class="question-number">Question 5 of 5</span>
+                            <span class="question-emoji">🍕</span>
+                        </div>
+                        <h3 class="question-text">What is your favorite food?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-correct="false">Pizza</button>
+                            <button class="option-btn" data-correct="false">Burger</button>
+                            <button class="option-btn" data-correct="true">Momos</button>
+                            <button class="option-btn" data-correct="false">Pasta</button>
+                        </div>
+                    </div>
+                    <div class="quiz-complete" id="quiz-complete">
+                        <span class="complete-heart">💖</span>
+                        <h3>You Completed The Quiz!</h3>
+                        <p>Now see your nicknames ❤️</p>
+                    </div>
+                </div>
+                <div class="feedback-overlay" id="feedback-overlay">
+                    <div class="feedback-card">
+                        <span class="feedback-emoji" id="feedback-emoji"></span>
+                        <p class="feedback-message" id="feedback-message"></p>
+                        <p class="feedback-detail" id="feedback-detail"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Story -->
+        <section class="section story-section" id="section-3">
+            <div class="section-content">
+                <h2 class="section-title"><span class="title-glow">Our Beautiful Story 💕</span></h2>
+                <div class="story-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💖</div>
+                        <div class="timeline-card">
+                            <span class="year">2017</span>
+                            <p class="moment">"I first saw you in Class 7 at Shivam Convent School Patna. That moment changed everything."</p>
+                            <span class="emoji">👀💖</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💍</div>
+                        <div class="timeline-card">
+                            <span class="year">25 May 2019</span>
+                            <p class="moment">"The night I proposed to you. You said YES and my life became complete."</p>
+                            <span class="emoji">💍❤️</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">❤️</div>
+                        <div class="timeline-card">
+                            <span class="year">Now</span>
+                            <p class="moment">"We're still together, stronger than ever. Every moment with you is precious."</p>
+                            <span class="emoji">💑✨</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Names -->
+        <section class="section names-section" id="section-4">
+            <div class="section-content">
+                <h2 class="section-title"><span class="title-glow">You Have Many Names In My Heart 💖</span></h2>
+                <div class="names-grid">
+                    <div class="name-card" data-sound="fuljhari">
+                        <span class="name-icon">💕</span>
+                        <span class="name-text">FULJHARI</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                    <div class="name-card" data-sound="radha">
+                        <span class="name-icon">💖</span>
+                        <span class="name-text">RADHA</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                    <div class="name-card" data-sound="mirchi">
+                        <span class="name-icon">🌶️</span>
+                        <span class="name-text">MIRCHI</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                    <div class="name-card" data-sound="cutenesski">
+                        <span class="name-icon">🛒</span>
+                        <span class="name-text">CUTENESS KI DUKAN</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                    <div class="name-card" data-sound="chuhiya">
+                        <span class="name-icon">🐭</span>
+                        <span class="name-text">CHUHIYA</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                    <div class="name-card" data-sound="fulan">
+                        <span class="name-icon">👑</span>
+                        <span class="name-text">FULAN DEVI</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                    <div class="name-card" data-sound="overloaded">
+                        <span class="name-icon">✨</span>
+                        <span class="name-text">CUTENESS OVERLOADED</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                    <div class="name-card" data-sound="moogfali">
+                        <span class="name-icon">🥜</span>
+                        <span class="name-text">MOONGFALI</span>
+                        <span class="sound-indicator">🔊</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Memories -->
+        <section class="section memories-section" id="section-5">
+            <div class="section-content">
+                <h2 class="section-title"><span class="title-glow">Our Precious Memories 📸</span></h2>
+                <p class="section-subtitle">Every moment with you is a treasure 💖</p>
+                <div class="memories-grid">
+                    <div class="memory-card" data-index="0">
+                        <img src="pic.png.jpg" alt="Memory">
+                        <div class="memory-overlay"><span>This day changed my life ❤️</span></div>
+                    </div>
+                    <div class="memory-card" data-index="1">
+                        <img src="pic.png2.jpg" alt="Memory">
+                        <div class="memory-overlay"><span>When I first saw your smile 😊</span></div>
+                    </div>
+                    <div class="memory-card" data-index="2">
+                        <img src="pic.png3.jpg" alt="Memory">
+                        <div class="memory-overlay"><span>Our first adventure 🌟</span></div>
+                    </div>
+                    <div class="memory-card" data-index="3">
+                        <img src="pic.png4.jpg" alt="Memory">
+                        <div class="memory-overlay"><span>The night we talked for hours 🌙</span></div>
+                    </div>
+                    <div class="memory-card" data-index="4">
+                        <img src="pic.png5.jpg" alt="Memory">
+                        <div class="memory-overlay"><span>You make every moment special 💫</span></div>
+                    </div>
+                    <div class="memory-card" data-index="5">
+                        <img src="pic.png6.jpeg" alt="Memory">
+                        <div class="memory-overlay"><span>My favorite person ❤️</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Letter -->
+        <section class="section letter-section" id="section-6">
+            <div class="section-content">
+                <h2 class="section-title"><span class="title-glow">A Letter For You 💌</span></h2>
+                <div class="envelope-section">
+                    <div class="envelope-container">
+                        <div class="envelope" id="envelope">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-body">
+                                <p class="envelope-hint">Click to open 💕</p>
+                            </div>
+                            <div class="letter-paper">
+                                <div class="letter-header"><span>🌹</span> <span>🌹</span></div>
+                                <div class="letter-body" id="letter-body"></div>
+                                <div class="letter-signature">
+                                    <p>Forever yours,</p>
+                                    <p class="signature-name">Gaurav 💖</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Final -->
+        <section class="section final-section" id="section-7">
+            <div class="final-content">
+                <div class="heart-explosion" id="heart-explosion"></div>
+                <div class="big-heart-container">
+                    <div class="big-heart"><span>💖</span></div>
+                </div>
+                <h2 class="final-title">I Love You Shikha ❤️</h2>
+                <p class="final-subtitle">Forever & Always</p>
+                <button class="surprise-btn" id="surprise-btn">
+                    <span>Click Me Jaan ❤️</span>
+                </button>
+            </div>
+            <div class="fireworks" id="fireworks"></div>
+            <div class="falling-hearts-final" id="falling-hearts-final"></div>
+        </section>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <button class="modal-close" id="modal-close">×</button>
+        <button class="modal-nav modal-prev" id="modal-prev">‹</button>
+        <button class="modal-nav modal-next" id="modal-next">›</button>
+        <div class="modal-content">
+            <img src="" alt="" id="modal-image">
+            <p id="modal-caption"></p>
+        </div>
+    </div>
+
+    <!-- Confetti -->
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-names">
+                <span class="name-left">Gaurav</span>
+                <span class="heart-icon">💖</span>
+                <span class="name-right">Shikha</span>
+            </p>
+            <p class="footer-text">All Rights Reserved ❤️</p>
+            <p class="footer-year">Made with love © 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
